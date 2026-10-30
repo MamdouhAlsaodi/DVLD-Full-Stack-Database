@@ -5,11 +5,7 @@ department: people, applications, license classes, tests and appointments,
 license issuing/renewal/replacement, and license detention — built as a
 training/portfolio project with a classic three-layer .NET architecture.
 
-> **Note:** This documentation describes the source as reviewed; deployment
-> status is unverified. Functional claims below are derived from the repository,
-> not from executed test runs.
-
-## Features (as implemented in source)
+## Features
 
 - **Login & user management** — login screen, user list, add/update users,
   change password (see `DVLD-Forms/Login`, `DVLD-Forms/User`).
@@ -48,8 +44,7 @@ Data access is direct ADO.NET (no ORM). The connection string is defined in
 ## Database setup
 
 1. The repository includes `DVLD.bak`, a SQL Server backup file.
-   **Its contents have not been reviewed or verified by this documentation.**
-   Inspect and restore it at your own discretion, e.g. via
+   Inspect its contents before restoring it, e.g. via
    SQL Server Management Studio: *Restore Database* from device.
    Alternatively, create a database schema matching the data-access code.
 2. Configure the connection string in
@@ -70,8 +65,6 @@ Data access is direct ADO.NET (no ORM). The connection string is defined in
 
 ## Known limitations & scope
 
-- **Not tested here:** the application was not built, run, or verified in
-  preparing this documentation.
 - **Database contents unknown:** `DVLD.bak` is tracked in the repository,
   but its contents and sensitivity have not been verified — treat it as
   untrusted and potentially sensitive.
