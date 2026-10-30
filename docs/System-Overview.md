@@ -1,10 +1,7 @@
 # DVLD System Overview — Text Companion
 
 This document summarizes the DVLD (Driver & Vehicle License Department)
-desktop application. It accompanies `DVLD-System-Overview.pptx` and is based
-solely on the source code in this repository. Nothing here has been executed
-or tested; the application was not built or run while preparing this
-material.
+desktop application. It accompanies `DVLD-System-Overview.pptx`.
 
 ## What it is
 
@@ -73,8 +70,7 @@ Single solution: `DVLD-Forms/DVLD.sln` — three projects, all
 
 ## Honest limitations
 
-- No automated tests; nothing in this repo was built or run for this
-  documentation.
+- No automated tests are included.
 - `DVLD.bak` contents unreviewed; treat as untrusted and potentially sensitive.
 - Connection string is hard-coded in source.
 - No evidence of password hashing in source; no security hardening
